@@ -1,3 +1,17 @@
 apiVersion: v1
-entries: {}
-generated: 2018-07-17T16:21:46.602244129-06:00
+entries:
+  openwhisk:
+  - apiVersion: v1
+    created: 2018-07-17T16:34:34.075287296-06:00
+    description: A Helm chart to deploy Apache OpenWhisk for Kubernetes
+    digest: d1476e27b41fa7b4a1bb1a51321af5bf1b568dcc37456605412a09514e1044c2
+    keywords:
+    - Apache OpenWhisk
+    maintainers:
+    - email: dev@openwhisk.apache.org
+      name: Apache OpenWhisk committers
+    name: openwhisk
+    urls:
+    - https://cedardevs.github.io/incubator-openwhisk-deploy-kube/openwhisk-0.1.0.tgz
+    version: 0.1.0
+generated: 2018-07-17T16:34:34.073921669-06:00
