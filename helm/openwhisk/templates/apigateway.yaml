@@ -10,6 +10,9 @@ metadata:
   labels:
     name: {{ .Values.apigw.name | quote }}
 spec:
+  {{- if eq .Values.whisk.ingress.type "standard" }}
+  type: NodePort
+  {{- end }}
   selector:
     name: {{ .Values.apigw.name | quote }}
   ports:

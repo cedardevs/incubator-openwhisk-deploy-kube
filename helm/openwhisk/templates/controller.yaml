@@ -10,6 +10,9 @@ metadata:
   labels:
     name: {{ .Values.controller.name | quote }}
 spec:
+  {{- if eq .Values.whisk.ingress.type "standard" }}
+  type: NodePort
+  {{- end }}
   selector:
     name: {{ .Values.controller.name | quote }}
   ports:

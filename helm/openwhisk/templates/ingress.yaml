@@ -16,13 +16,13 @@ spec:
   {{- if .Values.whisk.ingress.tls.enabled }}
   tls:
   - hosts:
-    - {{ .Values.whisk.ingress.domain }}
+    - {{ .Values.whisk.ingress.domain | quote }}
     {{- if .Values.whisk.ingress.tls.secretenabled }}
     secretName: {{ .Values.whisk.ingress.tls.secretname | quote }}
     {{- end }}
   {{- end }}
   rules:
-  - host: {{ .Values.whisk.ingress.domain }}
+  - host: {{ .Values.whisk.ingress.domain | quote }}
     http:
       paths:
       - path: /api/v1/web
