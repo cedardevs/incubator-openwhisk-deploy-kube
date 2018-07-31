@@ -6,6 +6,10 @@ kind: Service
 metadata:
   name: {{ .Values.nginx.name | quote }}
   namespace: {{ .Release.Namespace | quote }}
+  annotations:
+    {{- range $key, $value := .Values.nginx.annotations }}
+      {{ $key }}: {{ $value | quote }}
+    {{- end }}
   labels:
     name: {{ .Values.nginx.name | quote }}
 spec:
