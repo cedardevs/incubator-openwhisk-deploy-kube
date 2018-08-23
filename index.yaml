@@ -1,10 +1,24 @@
 apiVersion: v1
 entries:
+  kafka-provider:
+  - apiVersion: v1
+    created: 2018-08-23T10:51:01.011555056-06:00
+    description: A Helm chart to deploy the Apache OpenWhisk Kafka provider on Kubernetes
+    digest: 149c45540fb7ca180f8597412512427ce2b269f8e36efa86a89bae48e484fe9c
+    keywords:
+    - Apache OpenWhisk
+    maintainers:
+    - email: dev@openwhisk.apache.org
+      name: Apache OpenWhisk committers
+    name: kafka-provider
+    urls:
+    - kafka-provider-0.1.0.tgz
+    version: 0.1.0
   openwhisk:
   - apiVersion: v1
-    created: 2018-07-17T16:34:34.075287296-06:00
+    created: 2018-08-23T10:51:01.013397563-06:00
     description: A Helm chart to deploy Apache OpenWhisk for Kubernetes
-    digest: d1476e27b41fa7b4a1bb1a51321af5bf1b568dcc37456605412a09514e1044c2
+    digest: eddddb416e84fc7a32596ef9ecb8072da879b963ff94cae06661d45391be7489
     keywords:
     - Apache OpenWhisk
     maintainers:
@@ -12,6 +26,6 @@ entries:
       name: Apache OpenWhisk committers
     name: openwhisk
     urls:
-    - https://cedardevs.github.io/incubator-openwhisk-deploy-kube/openwhisk-0.1.0.tgz
+    - openwhisk-0.1.0.tgz
     version: 0.1.0
-generated: 2018-07-17T16:34:34.073921669-06:00
+generated: 2018-08-23T10:51:01.010969255-06:00
